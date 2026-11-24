@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Sweet Pop – Candy Match Game</title>
+<meta name="description" content="Sweet Pop is a free candy-matching puzzle game. Swap, match and pop candies across 20 levels. Installable and playable offline.">
+<meta name="theme-color" content="#ffb3d4">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Sweet Pop">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+  <section id="menu" class="screen">
+    <h1 class="title">🍬 Sweet Pop</h1>
+    <p class="sub" id="sumLine">Swap &amp; match candies!</p>
+    <div class="row"><button class="btn" id="btnContinue">▶ Play</button><button class="btn alt small" id="btnDaily">🎁 Daily</button><button class="btn alt small" id="btnShopMenu">🛒 Shop</button><button class="btn ghost small" id="btnSettings">⚙</button><button class="btn alt small" id="installBtn">📲 Install</button></div>
+    <div id="levels"></div>
+  </section>
+  <section id="game" class="screen hidden">
+    <div class="top">
+      <button class="menuBtn" id="btnPause" aria-label="Pause">☰</button>
+      <div class="lvl">Level <span id="lvlNum">1</span></div>
+      <div class="stat" id="movesBox"><small>MOVES</small><b id="moves">0</b></div>
+      <div class="stat"><small>SCORE</small><b id="score">0</b></div>
+    </div>
+    <div id="goal"></div>
+    <div id="boardWrap"><canvas id="cv"></canvas></div>
+    <div id="boosters">
+      <button class="bst" id="bHammer" aria-label="Hammer booster">🔨<span id="nHammer">3</span><small>SMASH</small></button>
+      <button class="bst" id="bShuffle" aria-label="Shuffle booster">🔀<span id="nShuffle">2</span><small>SHUFFLE</small></button>
+      <button class="bst rb" id="bRainbow" aria-label="Rainbow jewel booster">🌈<span id="nRainbow">1</span><small>RAINBOW</small></button>
+      <button class="bst shop" id="bShop" aria-label="Shop">🪙<span id="nCoins">0</span><small>SHOP</small></button>
+    </div>
+  </section>
+</div>
+<div id="modal" class="hidden"><div class="card" id="card"></div></div>
+<script src="/game.js"></script>
+</body>
+</html>

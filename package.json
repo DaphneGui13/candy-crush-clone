@@ -1,0 +1,9 @@
+{
+  "name": "candy-crush-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sweet Pop – a candy-matching puzzle game, installable as a PWA.",
+  "scripts": {
+    "start": "npx --yes serve . -l 3000"
+  }
+}
