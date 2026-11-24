@@ -1,6 +1,6 @@
 /* Sweet Pop service worker: precache the app shell, then stale-while-revalidate.
    Bump VERSION when you ship changes so old caches are cleared. */
-const VERSION = 'sweetpop-v2';
+const VERSION = 'sweetpop-v3';
 const SHELL = [
   '/', '/index.html', '/style.css', '/game.js', '/manifest.webmanifest',
   '/icons/icon.svg', '/icons/icon-192.png', '/icons/icon-512.png',
